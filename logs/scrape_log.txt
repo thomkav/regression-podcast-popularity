@@ -1,0 +1,295 @@
+Scraping log for all channels
+Now scraping https://castbox.fm/channel/Fresh-Air-id4319512019-10-03 15:22:43.323187––––––––text
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 15:27:47.594491 - began script
+––––––––
+2019-10-03 15:28:13.451160 - closed popup2019-10-03 15:28:13.828650 - clicked reverse button
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 15:28:15.855999 - began script
+––––––––
+2019-10-03 15:28:18.757866 - clicked reverse button
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 15:28:20.782206 - began script
+––––––––
+2019-10-03 15:28:23.026001 - clicked reverse button
+Now scraping https://castbox.fm/channel/99%-Invisible-id18
+2019-10-03 15:28:25.049198 - began script
+––––––––
+
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 15:32:50.059519 - began script
+––––––––
+2019-10-03 15:33:15.051988 - closed popup2019-10-03 15:33:15.390305 - clicked reverse button
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 15:33:17.418439 - began script
+––––––––
+2019-10-03 15:33:19.793586 - clicked reverse button
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 15:33:21.820650 - began script
+––––––––
+2019-10-03 15:33:24.224993 - clicked reverse button
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 15:33:26.249916 - began script
+––––––––
+2019-10-03 15:33:30.127619 - clicked reverse button
+Now scraping https://castbox.fm/channel/Snap-Judgment-Presents%3A-Spooked-id1022965
+2019-10-03 15:33:32.151306 - began script
+––––––––
+2019-10-03 15:33:35.794266 - clicked reverse button
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 15:35:51.372531 - began script
+––––––––
+2019-10-03 15:36:12.631364 - closed popup2019-10-03 15:36:12.996132 - clicked reverse button
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 15:36:15.019916 - began script
+––––––––
+2019-10-03 15:36:17.762647 - clicked reverse button
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 15:36:19.789685 - began script
+––––––––
+2019-10-03 15:36:22.143933 - clicked reverse button
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 15:36:24.168144 - began script
+––––––––
+2019-10-03 15:36:26.613465 - clicked reverse button
+Now scraping https://castbox.fm/channel/Snap-Judgment-Presents%3A-Spooked-id1022965
+2019-10-03 15:36:28.635164 - began script
+––––––––
+2019-10-03 15:36:32.265616 - clicked reverse button
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 15:37:58.395829 - began script
+––––––––
+2019-10-03 15:38:10.930850 - closed popup2019-10-03 15:38:11.297292 - clicked reverse button
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 15:42:58.901427 - began script
+––––––––
+2019-10-03 15:43:21.236322 - closed popup2019-10-03 15:43:21.605157 - clicked reverse button
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 15:45:37.983675 - began script
+––––––––
+2019-10-03 15:45:50.686115 - closed popup2019-10-03 15:45:51.063316 - clicked reverse button
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 15:47:27.522822 - began script
+––––––––
+2019-10-03 15:47:41.673095 - closed popup2019-10-03 15:47:42.052580 - clicked reverse button
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 15:48:17.304011 - began script
+––––––––
+2019-10-03 15:48:27.963686 - closed popup2019-10-03 15:48:28.333203 - clicked reverse button
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 15:48:30.360151 - began script
+––––––––
+2019-10-03 15:48:32.603392 - clicked reverse button
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 15:48:34.629365 - began script
+––––––––
+2019-10-03 15:48:36.469280 - clicked reverse button
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 15:48:38.491994 - began script
+––––––––
+
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 16:00:41.891870 - began script
+––––––––
+2019-10-03 16:00:59.782282 - closed popup2019-10-03 16:01:00.154964 - clicked reverse button
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 16:01:02.187483 - began script
+––––––––
+2019-10-03 16:01:05.337740 - clicked reverse button
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 16:01:07.361733 - began script
+––––––––
+2019-10-03 16:01:10.241336 - clicked reverse button
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 16:01:12.265837 - began script
+––––––––
+2019-10-03 16:01:14.606395 - clicked reverse button
+Now scraping https://castbox.fm/channel/Snap-Judgment-Presents%3A-Spooked-id1022965
+2019-10-03 16:01:16.642903 - began script
+––––––––
+2019-10-03 16:01:21.336229 - clicked reverse button
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 16:03:21.821767 - began script
+––––––––
+2019-10-03 16:03:31.527364 - closed popup2019-10-03 16:03:32.121015 - clicked reverse button
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 16:03:34.172515 - began script
+––––––––
+2019-10-03 16:03:37.795413 - clicked reverse button
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 16:03:39.832634 - began script
+––––––––
+2019-10-03 16:03:43.331661 - clicked reverse button
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 16:03:45.371593 - began script
+––––––––
+2019-10-03 16:03:48.690012 - clicked reverse button
+Now scraping https://castbox.fm/channel/Snap-Judgment-Presents%3A-Spooked-id1022965
+2019-10-03 16:03:50.731173 - began script
+––––––––
+2019-10-03 16:03:53.610586 - clicked reverse button
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 16:06:15.357260 - began script
+––––––––
+2019-10-03 16:06:24.271241 - closed popup2019-10-03 16:06:24.814679 - clicked reverse button
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 16:06:26.857211 - began script
+––––––––
+2019-10-03 16:06:29.631428 - clicked reverse button
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 16:06:31.671263 - began script
+––––––––
+2019-10-03 16:06:34.464602 - clicked reverse button
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 16:06:36.500542 - began script
+––––––––
+2019-10-03 16:06:39.017639 - clicked reverse button
+Now scraping https://castbox.fm/channel/Snap-Judgment-Presents%3A-Spooked-id1022965
+2019-10-03 16:06:41.052832 - began script
+––––––––
+2019-10-03 16:06:43.466033 - clicked reverse button
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 16:24:35.304075 - closed popup2019-10-03 16:24:35.416709 - processed features on page2019-10-03 16:24:35.678438 - clicked reverse button
+2019-10-03 16:24:37.713629 - found first date
+
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 16:24:39.975824 - processed features on page2019-10-03 16:24:40.245139 - clicked reverse button
+2019-10-03 16:24:42.270069 - found first date
+
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 16:24:45.204882 - processed features on page2019-10-03 16:24:45.465713 - clicked reverse button
+2019-10-03 16:24:47.489421 - found first date
+
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 16:24:50.588993 - processed features on page2019-10-03 16:24:50.845770 - clicked reverse button
+2019-10-03 16:24:52.864883 - found first date
+
+Now scraping https://castbox.fm/channel/Snap-Judgment-Presents%3A-Spooked-id1022965
+2019-10-03 16:24:55.573496 - processed features on page2019-10-03 16:24:55.845604 - clicked reverse button
+2019-10-03 16:24:57.871042 - found first date
+
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 16:26:26.951870 - closed popup2019-10-03 16:26:27.059347 - processed features on page2019-10-03 16:26:27.352840 - clicked reverse button
+2019-10-03 16:26:29.379658 - found first date
+
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 16:26:31.826267 - processed features on page2019-10-03 16:26:32.117327 - clicked reverse button
+2019-10-03 16:26:34.138152 - found first date
+
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 16:26:36.706510 - processed features on page2019-10-03 16:26:36.972775 - clicked reverse button
+2019-10-03 16:26:38.996856 - found first date
+
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 16:26:40.836964 - processed features on page2019-10-03 16:26:41.100606 - clicked reverse button
+2019-10-03 16:26:43.122233 - found first date
+
+Now scraping https://castbox.fm/channel/Snap-Judgment-Presents%3A-Spooked-id1022965
+2019-10-03 16:26:45.259402 - processed features on page2019-10-03 16:26:45.514291 - clicked reverse button
+2019-10-03 16:26:47.533152 - found first date
+
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 16:30:04.895043 - closed popup2019-10-03 16:30:04.999503 - processed features on page2019-10-03 16:30:05.275194 - clicked reverse button
+2019-10-03 16:30:07.307969 - found first date
+
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 16:30:09.585172 - processed features on page2019-10-03 16:30:09.855613 - clicked reverse button
+2019-10-03 16:30:11.880594 - found first date
+
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 16:30:14.108011 - processed features on page2019-10-03 16:30:14.370726 - clicked reverse button
+2019-10-03 16:30:16.393322 - found first date
+
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 16:30:18.433392 - processed features on page2019-10-03 16:30:18.690040 - clicked reverse button
+2019-10-03 16:30:20.714332 - found first date
+
+Now scraping https://castbox.fm/channel/Snap-Judgment-Presents%3A-Spooked-id1022965
+2019-10-03 16:30:23.452630 - processed features on page2019-10-03 16:30:23.722277 - clicked reverse button
+2019-10-03 16:30:25.747358 - found first date
+
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 16:32:24.741871 - closed popup2019-10-03 16:32:24.847837 - processed features on page2019-10-03 16:32:25.109773 - clicked reverse button
+2019-10-03 16:32:27.135860 - found first date
+
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 16:32:29.478375 - processed features on page2019-10-03 16:32:29.743986 - clicked reverse button
+2019-10-03 16:32:31.771233 - found first date
+
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 16:32:33.792338 - processed features on page2019-10-03 16:32:34.053773 - clicked reverse button
+2019-10-03 16:32:36.074940 - found first date
+
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 16:32:38.046546 - processed features on page2019-10-03 16:32:38.339403 - clicked reverse button
+2019-10-03 16:32:40.368008 - found first date
+
+Now scraping https://castbox.fm/channel/Snap-Judgment-Presents%3A-Spooked-id1022965
+2019-10-03 16:32:42.671970 - processed features on page2019-10-03 16:32:42.928759 - clicked reverse button
+2019-10-03 16:32:44.950777 - found first date
+
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 16:48:05.880449 - closed popup2019-10-03 16:48:05.956761 - processed features on page2019-10-03 16:48:06.213472 - clicked reverse button
+2019-10-03 16:48:08.240657 - found first date
+
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 16:48:10.500035 - processed features on page2019-10-03 16:48:10.762942 - clicked reverse button
+2019-10-03 16:48:12.788616 - found first date
+
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+2019-10-03 16:51:48.649876 - closed popup2019-10-03 16:51:48.727967 - processed features on page2019-10-03 16:51:48.985474 - clicked reverse button
+2019-10-03 16:51:51.013849 - found first date
+
+Now scraping https://castbox.fm/channel/The-Moth-id12
+2019-10-03 16:51:53.392139 - processed features on page2019-10-03 16:51:53.662820 - clicked reverse button
+2019-10-03 16:51:55.684234 - found first date
+
+Now scraping https://castbox.fm/channel/TED-Talks-Daily-id4541
+2019-10-03 16:51:57.401810 - processed features on page2019-10-03 16:51:57.671723 - clicked reverse button
+2019-10-03 16:51:59.693460 - found first date
+
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 16:52:01.253764 - processed features on page2019-10-03 16:52:01.523774 - clicked reverse button
+2019-10-03 16:52:03.545142 - found first date
+
+Now scraping https://castbox.fm/channel/Snap-Judgment-Presents%3A-Spooked-id1022965
+
+Now scraping https://castbox.fm/channel/Fresh-Air-id431951
+
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 16:57:32.838129 - closed popup2019-10-03 16:57:32.909319 - processed features on page2019-10-03 16:57:33.181594 - clicked reverse button
+2019-10-03 16:57:35.202995 - found first date
+
+Now scraping https://castbox.fm/channel/Snap-Judgment-Presents%3A-Spooked-id1022965
+2019-10-03 16:57:38.818172 - processed features on page2019-10-03 16:57:39.095339 - clicked reverse button
+2019-10-03 16:57:41.121841 - found first date
+
+Now scraping https://castbox.fm/channel/Myths-and-Legends-id227508
+2019-10-03 16:57:45.840818 - processed features on page2019-10-03 16:57:46.113621 - clicked reverse button
+2019-10-03 16:57:48.135524 - found first date
+
+Now scraping https://castbox.fm/channel/Nice-Try!-id2112178
+2019-10-03 16:57:50.944018 - processed features on page2019-10-03 16:57:51.210898 - clicked reverse button
+2019-10-03 16:57:53.231058 - found first date
+
+Now scraping https://castbox.fm/channel/Snap-Judgment-id131
+
+Now scraping https://castbox.fm/channel/id18
+2019-10-03 16:59:54.484317 - closed popup2019-10-03 16:59:54.560341 - processed features on page2019-10-03 16:59:54.831964 - clicked reverse button
+2019-10-03 16:59:56.861589 - found first date
+
+Now scraping https://castbox.fm/channel/Snap-Judgment-id131
+2019-10-03 16:59:59.426545 - processed features on page2019-10-03 16:59:59.700312 - clicked reverse button
+2019-10-03 17:00:01.724881 - found first date
+
+Now scraping https://castbox.fm/channel/The-Beauty-Closet-id2197246
+2019-10-03 17:00:03.873912 - processed features on page2019-10-03 17:00:04.135269 - clicked reverse button
+2019-10-03 17:00:06.156266 - found first date
+
+Now scraping https://castbox.fm/channel/LeVar-Burton-Reads-id601419
+2019-10-03 17:00:08.710238 - processed features on page2019-10-03 17:00:08.963688 - clicked reverse button
+2019-10-03 17:00:10.983675 - found first date
