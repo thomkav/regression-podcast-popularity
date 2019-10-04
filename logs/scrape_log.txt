@@ -293,3 +293,575 @@ Now scraping https://castbox.fm/channel/The-Beauty-Closet-id2197246
 Now scraping https://castbox.fm/channel/LeVar-Burton-Reads-id601419
 2019-10-03 17:00:08.710238 - processed features on page2019-10-03 17:00:08.963688 - clicked reverse button
 2019-10-03 17:00:10.983675 - found first date
+
+Now scraping https://castbox.fm/channel/Scary-Stories-Told-in-the-Dark%3A-A-Horror-Anthology-Series-id1232176
+2019-10-03 22:06:14.649185 - closed popup2019-10-03 22:06:14.737232 - processed features on page2019-10-03 22:06:15.006117 - clicked reverse button
+2019-10-03 22:06:17.030628 - found first date
+
+Now scraping https://castbox.fm/channel/The-Cut-on-Tuesdays-id1435073
+2019-10-03 22:06:18.969674 - processed features on page2019-10-03 22:06:19.237233 - clicked reverse button
+2019-10-03 22:06:21.260920 - found first date
+
+Now scraping https://castbox.fm/channel/The-Magnus-Archives-id466754
+2019-10-03 22:06:23.106600 - processed features on page2019-10-03 22:06:23.399521 - clicked reverse button
+2019-10-03 22:06:25.422602 - found first date
+
+Now scraping https://castbox.fm/channel/IN-LOVE...-with-Michael-Rosenbaum-%26-Chris-Sullivan-id2111878
+
+Now scraping https://castbox.fm/channel/IN-LOVE...-with-Michael-Rosenbaum-%26-Chris-Sullivan-id2111878
+2019-10-04 08:37:34.672122 - closed popup2019-10-04 08:37:34.727152 - processed features on page2019-10-04 08:37:34.987145 - clicked reverse button
+2019-10-04 08:37:37.011922 - found first date
+
+Now scraping https://castbox.fm/channel/The-Book-Review-id1099174
+2019-10-04 08:37:38.616537 - processed features on page2019-10-04 08:37:38.877126 - clicked reverse button
+2019-10-04 08:37:40.898902 - found first date
+
+Now scraping https://castbox.fm/channel/Something-Scary-id1446906
+2019-10-04 08:37:44.151918 - processed features on page2019-10-04 08:37:44.419245 - clicked reverse button
+2019-10-04 08:37:46.439161 - found first date
+
+Now scraping https://castbox.fm/channel/Tales-id1404705
+2019-10-04 08:37:48.006609 - processed features on page2019-10-04 08:37:48.260489 - clicked reverse button
+2019-10-04 08:37:50.282874 - found first date
+
+Now scraping https://castbox.fm/channel/Young-House-Love-Has-A-Podcast-id342105
+
+Now scraping https://castbox.fm/channel/Young-House-Love-Has-A-Podcast-id342105
+2019-10-04 08:38:38.711839 - closed popup2019-10-04 08:38:38.777342 - processed features on page2019-10-04 08:38:39.032132 - clicked reverse button
+2019-10-04 08:38:41.059024 - found first date
+
+Now scraping https://castbox.fm/channel/Cum-Town-id317405
+2019-10-04 08:38:44.284517 - processed features on page2019-10-04 08:38:44.552003 - clicked reverse button
+2019-10-04 08:38:46.577781 - found first date
+
+Now scraping https://castbox.fm/channel/RISK!-id136
+2019-10-04 08:38:48.944907 - processed features on page2019-10-04 08:38:49.199969 - clicked reverse button
+2019-10-04 08:38:51.221294 - found first date
+
+Now scraping https://castbox.fm/channel/Gals-on-the-Go-id2072514
+
+Now scraping https://castbox.fm/channel/Gals-on-the-Go-id2072514
+2019-10-04 08:41:03.448025 - closed popup2019-10-04 08:41:03.520403 - processed features on page2019-10-04 08:41:04.591094 - clicked reverse button
+2019-10-04 08:41:07.615919 - found first date
+
+Now scraping https://castbox.fm/channel/The-New-Yorker%3A-Fiction-id30
+2019-10-04 08:41:09.693124 - processed features on page2019-10-04 08:41:10.754238 - clicked reverse button
+2019-10-04 08:41:13.777104 - found first date
+
+Now scraping https://castbox.fm/channel/Bon-Appétit-Foodcast-id1373960
+
+Now scraping https://castbox.fm/channel/Bon-Appétit-Foodcast-id1373960
+2019-10-04 08:44:19.701947 - closed popup2019-10-04 08:44:19.762382 - processed features on page2019-10-04 08:44:20.824204 - clicked reverse button
+2019-10-04 08:44:23.848923 - found first date
+
+Now scraping https://castbox.fm/channel/What-Should-I-Read-Next%3F-id1061913
+2019-10-04 08:44:26.179299 - processed features on page2019-10-04 08:44:27.246258 - clicked reverse button
+2019-10-04 08:44:30.266368 - found first date
+
+Now scraping https://castbox.fm/channel/Inside-Trader-Joe's-id1241792
+
+Now scraping https://castbox.fm/channel/Inside-Trader-Joe's-id1241792
+2019-10-04 08:46:01.325185 - closed popup2019-10-04 08:46:01.391547 - processed features on page2019-10-04 08:46:02.457505 - clicked reverse button
+2019-10-04 08:46:05.482492 - found first date
+
+Now scraping https://castbox.fm/channel/Forever35-id2181141
+
+Now scraping https://castbox.fm/channel/Forever35-id2181141
+2019-10-04 08:47:13.931262 - closed popup2019-10-04 08:47:13.998046 - processed features on page2019-10-04 08:47:19.056414 - clicked reverse button
+2019-10-04 08:47:24.083020 - found first date
+
+Now scraping https://castbox.fm/channel/Lauren-Conrad%3A-Asking-for-a-Friend-id2059979
+2019-10-04 08:47:26.579169 - processed features on page2019-10-04 08:47:31.644705 - clicked reverse button
+2019-10-04 08:47:36.670304 - found first date
+
+Now scraping https://castbox.fm/channel/Point-of-Origin-id2231544
+2019-10-04 08:47:38.471267 - processed features on page2019-10-04 08:47:43.551659 - clicked reverse button
+2019-10-04 08:47:48.575346 - found first date
+
+Now scraping https://castbox.fm/channel/Merriam-Webster's-Word-of-the-Day-id424826
+2019-10-04 08:47:50.412265 - processed features on page2019-10-04 08:47:55.481527 - clicked reverse button
+2019-10-04 08:48:00.506454 - found first date
+
+Now scraping https://castbox.fm/channel/Binge-Mode%3A-Harry-Potter-id2101660
+2019-10-04 08:48:03.478771 - processed features on page2019-10-04 08:48:08.554091 - clicked reverse button
+2019-10-04 08:48:13.579516 - found first date
+
+Now scraping https://castbox.fm/channel/Chilling-Tales-for-Dark-Nights%3A-A-Horror-Anthology-and-Scary-Stories-Series-Podcast-id1235520
+2019-10-04 13:12:59.797052 - closed popup2019-10-04 13:12:59.876125 - processed features on page2019-10-04 13:13:04.936404 - clicked reverse button
+2019-10-04 13:13:09.959655 - found first date
+
+Now scraping https://castbox.fm/channel/Race-Chaser-with-Alaska-%26-Willam-id2008334
+2019-10-04 13:13:15.036335 - processed features on page2019-10-04 13:13:20.108925 - clicked reverse button
+2019-10-04 13:13:25.135331 - found first date
+
+Now scraping https://castbox.fm/channel/Creative-Processing-with-Joseph-Gordon-Levitt-id2203319
+2019-10-04 13:13:31.777158 - processed features on page2019-10-04 13:13:36.850327 - clicked reverse button
+2019-10-04 13:13:41.875919 - found first date
+
+Now scraping https://castbox.fm/channel/Magic-Lessons-with-Elizabeth-Gilbert-id1364214
+2019-10-04 13:13:44.375756 - processed features on page2019-10-04 13:13:49.448635 - clicked reverse button
+2019-10-04 13:13:54.467462 - found first date
+
+Now scraping https://castbox.fm/channel/Dancing-with-the-Stars-Official-Podcast-id2377558
+2019-10-04 13:13:56.627166 - processed features on page2019-10-04 13:14:01.696277 - clicked reverse button
+2019-10-04 13:14:06.721692 - found first date
+
+Now scraping https://castbox.fm/channel/OTR-Detective-–-The-Great-Detectives-of-Old-Time-Radio-id184
+2019-10-04 13:14:08.972546 - processed features on page2019-10-04 13:14:14.054183 - clicked reverse button
+2019-10-04 13:14:19.078562 - found first date
+
+Now scraping https://castbox.fm/channel/The-Splendid-Table-id424336
+2019-10-04 13:14:21.473723 - processed features on page2019-10-04 13:14:26.559647 - clicked reverse button
+2019-10-04 13:14:31.582203 - found first date
+
+Now scraping https://castbox.fm/channel/Weeknight-Kitchen-with-Melissa-Clark-id2215037
+2019-10-04 13:14:34.581584 - processed features on page2019-10-04 13:14:39.659772 - clicked reverse button
+2019-10-04 13:14:44.682111 - found first date
+
+Now scraping https://castbox.fm/channel/Here-%26-Now-id431968
+2019-10-04 13:14:46.441646 - processed features on page2019-10-04 13:14:51.514662 - clicked reverse button
+2019-10-04 13:14:56.534295 - found first date
+
+Now scraping https://castbox.fm/channel/The-Sporkful-id506752
+2019-10-04 13:14:58.558145 - processed features on page2019-10-04 13:15:03.624831 - clicked reverse button
+2019-10-04 13:15:08.655766 - found first date
+
+Now scraping https://castbox.fm/channel/4-Things-with-Amy-Brown-id1484398
+
+Now scraping https://castbox.fm/channel/4-Things-with-Amy-Brown-id1484398
+2019-10-04 13:36:52.872557 - closed popup2019-10-04 13:36:52.930303 - processed features on page2019-10-04 13:36:57.996037 - clicked reverse button
+2019-10-04 13:37:03.028885 - found first date
+
+Now scraping https://castbox.fm/channel/The-New-Yorker%3A-The-Writer's-Voice-New-Fiction-from-The-New-Yorker-id230550
+2019-10-04 13:37:05.600152 - processed features on page2019-10-04 13:37:10.668010 - clicked reverse button
+2019-10-04 13:37:15.692866 - found first date
+
+Now scraping https://castbox.fm/channel/The-Allusionist-id186
+2019-10-04 13:37:19.246572 - processed features on page2019-10-04 13:37:24.321790 - clicked reverse button
+2019-10-04 13:37:29.349595 - found first date
+
+Now scraping https://castbox.fm/channel/Marvel's-Wolverine-id1166280
+
+Now scraping https://castbox.fm/channel/Marvel's-Wolverine-id1166280
+2019-10-04 13:57:39.442120 - closed popup2019-10-04 13:57:39.524082 - processed features on page2019-10-04 13:57:44.587605 - clicked reverse button
+2019-10-04 13:57:49.614658 - found first date
+
+Now scraping https://castbox.fm/channel/Christopher-Kimball’s-Milk-Street-Radio-id597231
+2019-10-04 13:57:51.356458 - processed features on page2019-10-04 13:57:56.445309 - clicked reverse button
+2019-10-04 13:58:01.469031 - found first date
+
+Now scraping https://castbox.fm/channel/Gastropod-id1451330
+
+Now scraping https://castbox.fm/channel/Gastropod-id1451330
+2019-10-04 14:01:04.510462 - closed popup2019-10-04 14:01:04.563691 - processed features on page2019-10-04 14:01:09.635524 - clicked reverse button
+2019-10-04 14:01:14.658354 - found first date
+
+Now scraping https://castbox.fm/channel/Wireframe-id1445316
+2019-10-04 14:01:16.393185 - processed features on page2019-10-04 14:01:21.461631 - clicked reverse button
+2019-10-04 14:01:26.487584 - found first date
+
+Now scraping https://castbox.fm/channel/How-To-Fail-With-Elizabeth-Day-id1370195
+2019-10-04 14:01:28.668580 - processed features on page2019-10-04 14:01:33.721437 - clicked reverse button
+2019-10-04 14:01:38.748775 - found first date
+
+Now scraping https://castbox.fm/channel/A-Piece-of-Work-id947249
+
+Now scraping https://castbox.fm/channel/The-Dave-Ramsey-Show-id2245
+2019-10-04 14:10:20.284222 - closed popup2019-10-04 14:10:20.356035 - processed features on page2019-10-04 14:10:25.428193 - clicked reverse button
+2019-10-04 14:10:30.452717 - found first date
+
+Now scraping https://castbox.fm/channel/How-I-Built-This-with-Guy-Raz-id431970
+2019-10-04 14:10:32.458372 - processed features on page2019-10-04 14:10:37.531049 - clicked reverse button
+2019-10-04 14:10:42.557045 - found first date
+
+Now scraping https://castbox.fm/channel/RISE-podcast-id2010666
+2019-10-04 14:10:47.481716 - processed features on page2019-10-04 14:10:52.548505 - clicked reverse button
+2019-10-04 14:10:57.573319 - found first date
+
+Now scraping https://castbox.fm/channel/Planet-Money-id431962
+2019-10-04 14:11:00.128592 - processed features on page2019-10-04 14:11:05.200502 - clicked reverse button
+2019-10-04 14:11:10.224535 - found first date
+
+Now scraping https://castbox.fm/channel/Scam-Goddess-id2361014
+2019-10-04 14:11:11.592861 - processed features on page2019-10-04 14:11:16.652495 - clicked reverse button
+2019-10-04 14:11:21.678268 - found first date
+
+Now scraping https://castbox.fm/channel/The-GaryVee-Audio-Experience-id257325
+2019-10-04 14:11:23.918865 - processed features on page2019-10-04 14:11:28.978659 - clicked reverse button
+2019-10-04 14:11:34.004920 - found first date
+
+Now scraping https://castbox.fm/channel/The-Indicator-from-Planet-Money-id1101800
+2019-10-04 14:11:37.096345 - processed features on page2019-10-04 14:11:42.161752 - clicked reverse button
+2019-10-04 14:11:47.184163 - found first date
+
+Now scraping https://castbox.fm/channel/Jocko-Podcast-id444695
+2019-10-04 14:11:50.231018 - processed features on page2019-10-04 14:11:55.296785 - clicked reverse button
+2019-10-04 14:12:00.322817 - found first date
+
+Now scraping https://castbox.fm/channel/Business-Wars-id1155081
+2019-10-04 14:12:02.883577 - processed features on page2019-10-04 14:12:07.953276 - clicked reverse button
+2019-10-04 14:12:12.979116 - found first date
+
+Now scraping https://castbox.fm/channel/The-Journal.-id2174305
+2019-10-04 14:12:15.937060 - processed features on page2019-10-04 14:12:20.998835 - clicked reverse button
+2019-10-04 14:12:26.025399 - found first date
+
+Now scraping https://castbox.fm/channel/The-Tim-Ferriss-Show-id1059468
+2019-10-04 14:12:28.485100 - processed features on page2019-10-04 14:12:33.553919 - clicked reverse button
+2019-10-04 14:12:38.577422 - found first date
+
+Now scraping https://castbox.fm/channel/BiggerPockets-Real-Estate-Podcast-id2208472
+2019-10-04 14:12:41.231792 - processed features on page2019-10-04 14:12:46.299165 - clicked reverse button
+2019-10-04 14:12:51.325869 - found first date
+
+Now scraping https://castbox.fm/channel/Business-Casual-id2369884
+2019-10-04 14:12:54.287260 - processed features on page2019-10-04 14:12:59.358321 - clicked reverse button
+2019-10-04 14:13:04.384921 - found first date
+
+Now scraping https://castbox.fm/channel/RISE-Together-Podcast-id2010655
+2019-10-04 14:13:07.149099 - processed features on page2019-10-04 14:13:12.215916 - clicked reverse button
+2019-10-04 14:13:17.241799 - found first date
+
+Now scraping https://castbox.fm/channel/She-Makes-Money-Moves-id2360999
+2019-10-04 14:13:19.475747 - processed features on page2019-10-04 14:13:24.547522 - clicked reverse button
+2019-10-04 14:13:29.566102 - found first date
+
+Now scraping https://castbox.fm/channel/Hello-Monday-with-Jessi-Hempel-id2371570
+2019-10-04 14:13:31.420888 - processed features on page2019-10-04 14:13:36.480454 - clicked reverse button
+2019-10-04 14:13:41.513765 - found first date
+
+Now scraping https://castbox.fm/channel/WSJ-What’s-News-id1403335
+2019-10-04 14:13:43.684955 - processed features on page2019-10-04 14:13:48.756608 - clicked reverse button
+2019-10-04 14:13:53.781394 - found first date
+
+Now scraping https://castbox.fm/channel/Marketplace-id423981
+2019-10-04 14:13:57.671511 - processed features on page2019-10-04 14:14:02.739364 - clicked reverse button
+2019-10-04 14:14:07.760580 - found first date
+
+Now scraping https://castbox.fm/channel/ED-MYLETT-SHOW-id424698
+2019-10-04 14:14:10.650798 - processed features on page2019-10-04 14:14:15.725736 - clicked reverse button
+2019-10-04 14:14:20.751290 - found first date
+
+Now scraping https://castbox.fm/channel/The-Goal-Digger-Podcast-id497450
+2019-10-04 14:14:23.069802 - processed features on page2019-10-04 14:14:28.143960 - clicked reverse button
+2019-10-04 14:14:33.169129 - found first date
+
+Now scraping https://castbox.fm/channel/Against-the-Rules-with-Michael-Lewis-id2045458
+2019-10-04 14:14:35.605552 - processed features on page2019-10-04 14:14:40.667191 - clicked reverse button
+2019-10-04 14:14:45.691746 - found first date
+
+Now scraping https://castbox.fm/channel/HBR-IdeaCast-id1877
+2019-10-04 14:14:47.937209 - processed features on page2019-10-04 14:14:52.996979 - clicked reverse button
+2019-10-04 14:14:58.019147 - found first date
+
+Now scraping https://castbox.fm/channel/The-Chris-Hogan-Show-id331660
+2019-10-04 14:15:00.609042 - processed features on page2019-10-04 14:15:05.673220 - clicked reverse button
+2019-10-04 14:15:10.701076 - found first date
+
+Now scraping https://castbox.fm/channel/The-MFCEO-Project-id8108
+2019-10-04 14:15:13.859996 - processed features on page2019-10-04 14:15:18.928021 - clicked reverse button
+2019-10-04 14:15:23.951316 - found first date
+
+Now scraping https://castbox.fm/channel/ChooseFI-id1112667
+2019-10-04 14:15:26.447424 - processed features on page2019-10-04 14:15:31.512288 - clicked reverse button
+2019-10-04 14:15:36.540268 - found first date
+
+Now scraping https://castbox.fm/channel/The-EntreLeadership-Podcast-id1746
+2019-10-04 14:15:38.483377 - processed features on page2019-10-04 14:15:43.550723 - clicked reverse button
+2019-10-04 14:15:48.573460 - found first date
+
+Now scraping https://castbox.fm/channel/The-Ken-Coleman-Show-id1018392
+2019-10-04 14:15:51.046910 - processed features on page2019-10-04 14:15:56.115260 - clicked reverse button
+2019-10-04 14:16:01.139204 - found first date
+
+Now scraping https://castbox.fm/channel/The-Clark-Howard-Podcast-id2378727
+2019-10-04 14:16:03.897192 - processed features on page2019-10-04 14:16:08.972808 - clicked reverse button
+2019-10-04 14:16:13.998548 - found first date
+
+Now scraping https://castbox.fm/channel/WSJ-Your-Money-Briefing-id1403349
+2019-10-04 14:16:15.923983 - processed features on page2019-10-04 14:16:20.985324 - clicked reverse button
+2019-10-04 14:16:26.011071 - found first date
+
+Now scraping https://castbox.fm/channel/TED-Talks-Business-id1885
+2019-10-04 14:16:28.338217 - processed features on page2019-10-04 14:16:33.412371 - clicked reverse button
+2019-10-04 14:16:38.435958 - found first date
+
+Now scraping https://castbox.fm/channel/Mad-Money-w%2F-Jim-Cramer-id1096447
+2019-10-04 14:16:41.104537 - processed features on page2019-10-04 14:16:46.176121 - clicked reverse button
+2019-10-04 14:16:51.200318 - found first date
+
+Now scraping https://castbox.fm/channel/Christy-Wright's-Business-Boutique-id363632
+2019-10-04 14:16:57.114492 - processed features on page2019-10-04 14:17:02.206241 - clicked reverse button
+2019-10-04 14:17:07.230816 - found first date
+
+Now scraping https://castbox.fm/channel/Rich-Dad-Radio-Show%3A-In-Your-Face-Advice-on-Investing%2C-Personal-Finance%2C-%26-Starting-a-Business-id2246
+2019-10-04 14:17:11.311582 - processed features on page2019-10-04 14:17:16.379082 - clicked reverse button
+2019-10-04 14:17:21.401501 - found first date
+
+Now scraping https://castbox.fm/channel/Side-Hustle-School-id1267924
+2019-10-04 14:17:23.749943 - processed features on page2019-10-04 14:17:28.814368 - clicked reverse button
+2019-10-04 14:17:33.840289 - found first date
+
+Now scraping https://castbox.fm/channel/The-Cardone-Zone-id2215630
+2019-10-04 14:17:35.999648 - processed features on page2019-10-04 14:17:41.079974 - clicked reverse button
+2019-10-04 14:17:46.110880 - found first date
+
+Now scraping https://castbox.fm/channel/We-Study-Billionaires-The-Investor’s-Podcast-Network-id483309
+2019-10-04 14:17:48.737122 - processed features on page2019-10-04 14:17:53.803533 - clicked reverse button
+2019-10-04 14:17:58.829071 - found first date
+
+Now scraping https://castbox.fm/channel/The-Smart-Passive-Income-Online-Business-and-Blogging-Podcast-id3998
+2019-10-04 14:18:01.274982 - processed features on page2019-10-04 14:18:06.355435 - clicked reverse button
+2019-10-04 14:18:11.383012 - found first date
+
+Now scraping https://castbox.fm/channel/Money-Girl's-Quick-and-Dirty-Tips-for-a-Richer-Life-id1158978
+2019-10-04 14:18:13.128488 - processed features on page2019-10-04 14:18:18.198978 - clicked reverse button
+2019-10-04 14:18:23.223063 - found first date
+
+Now scraping https://castbox.fm/channel/Talking-Green-id2223697
+2019-10-04 14:18:25.346087 - processed features on page2019-10-04 14:18:30.406827 - clicked reverse button
+2019-10-04 14:18:35.432016 - found first date
+
+Now scraping https://castbox.fm/channel/WorkLife-with-Adam-Grant-id1170319
+2019-10-04 14:18:37.080607 - processed features on page2019-10-04 14:18:42.142267 - clicked reverse button
+2019-10-04 14:18:47.165761 - found first date
+
+Now scraping https://castbox.fm/channel/Masters-in-Business-id966334
+2019-10-04 14:18:49.012435 - processed features on page2019-10-04 14:18:54.078739 - clicked reverse button
+2019-10-04 14:18:59.101900 - found first date
+
+Now scraping https://castbox.fm/channel/That-Made-All-the-Difference-id2280539
+2019-10-04 14:19:01.167765 - processed features on page2019-10-04 14:19:06.228921 - clicked reverse button
+2019-10-04 14:19:11.256801 - found first date
+
+Now scraping https://castbox.fm/channel/Afford-Anything-id113822
+2019-10-04 14:19:14.640529 - processed features on page2019-10-04 14:19:19.699178 - clicked reverse button
+2019-10-04 14:19:24.722340 - found first date
+
+Now scraping https://castbox.fm/channel/Online-Marketing-Made-Easy-with-Amy-Porterfield-id1324061
+2019-10-04 14:19:27.461291 - processed features on page2019-10-04 14:19:32.537819 - clicked reverse button
+2019-10-04 14:19:37.570740 - found first date
+
+Now scraping https://castbox.fm/channel/Listen-Money-Matters-Free-your-inner-financial-badass.-All-the-stuff-you-should-know-about-personal-finance.-id1458629
+2019-10-04 14:19:40.378447 - processed features on page2019-10-04 14:19:45.439005 - clicked reverse button
+2019-10-04 14:19:50.466141 - found first date
+
+Now scraping https://castbox.fm/channel/How-to-Money-id1484242
+2019-10-04 14:19:53.073722 - processed features on page2019-10-04 14:19:58.141614 - clicked reverse button
+2019-10-04 14:20:03.164700 - found first date
+
+Now scraping https://castbox.fm/channel/Masters-of-Scale-with-Reid-Hoffman-id532469
+2019-10-04 14:20:05.763738 - processed features on page2019-10-04 14:20:10.827240 - clicked reverse button
+2019-10-04 14:20:15.851954 - found first date
+
+Now scraping https://castbox.fm/channel/Earn-Your-Leisure-id1991321
+2019-10-04 14:20:19.774497 - processed features on page2019-10-04 14:20:24.848064 - clicked reverse button
+2019-10-04 14:20:29.871310 - found first date
+
+Now scraping https://castbox.fm/channel/Second-Life-id1175180
+2019-10-04 14:20:31.903555 - processed features on page2019-10-04 14:20:36.965226 - clicked reverse button
+2019-10-04 14:20:41.987742 - found first date
+
+Now scraping https://castbox.fm/channel/Coaching-for-Leaders-id2009977
+2019-10-04 14:20:44.104753 - processed features on page2019-10-04 14:20:49.171916 - clicked reverse button
+2019-10-04 14:20:54.196917 - found first date
+
+Now scraping https://castbox.fm/channel/WSJ-Secrets-of-Wealthy-Women-id1396895
+2019-10-04 14:20:56.298559 - processed features on page2019-10-04 14:21:01.377833 - clicked reverse button
+2019-10-04 14:21:06.404708 - found first date
+
+Now scraping https://castbox.fm/channel/BiggerPockets-Money-Podcast-id2208482
+2019-10-04 14:21:11.800087 - processed features on page2019-10-04 14:21:16.877365 - clicked reverse button
+2019-10-04 14:21:21.920996 - found first date
+
+Now scraping https://castbox.fm/channel/Building-a-StoryBrand-with-Donald-Miller-id1367496
+2019-10-04 14:21:24.433995 - processed features on page2019-10-04 14:21:29.494801 - clicked reverse button
+2019-10-04 14:21:34.522538 - found first date
+
+Now scraping https://castbox.fm/channel/Andy-Stanley-Leadership-Podcast-id2095857
+2019-10-04 14:21:37.719943 - processed features on page2019-10-04 14:21:42.796714 - clicked reverse button
+2019-10-04 14:21:47.822729 - found first date
+
+Now scraping https://castbox.fm/channel/Spectacular-Failures-id2147664
+2019-10-04 14:21:51.672729 - processed features on page2019-10-04 14:21:56.783471 - clicked reverse button
+2019-10-04 14:22:01.806120 - found first date
+
+Now scraping https://castbox.fm/channel/Women-at-Work-id1151304
+2019-10-04 14:22:04.171297 - processed features on page2019-10-04 14:22:09.235981 - clicked reverse button
+2019-10-04 14:22:14.258690 - found first date
+
+Now scraping https://castbox.fm/channel/Skimm'd-from-The-Couch-id1169524
+2019-10-04 14:22:15.999299 - processed features on page2019-10-04 14:22:21.068954 - clicked reverse button
+2019-10-04 14:22:26.097108 - found first date
+
+Now scraping https://castbox.fm/channel/The-Knowledge-Project-with-Shane-Parrish-id557
+2019-10-04 14:22:29.450949 - processed features on page2019-10-04 14:22:34.520187 - clicked reverse button
+2019-10-04 14:22:39.545385 - found first date
+
+Now scraping https://castbox.fm/channel/Suze-Orman's-Women-and-Money-id1452893
+2019-10-04 14:22:41.515715 - processed features on page2019-10-04 14:22:46.581765 - clicked reverse button
+2019-10-04 14:22:51.605792 - found first date
+
+Now scraping https://castbox.fm/channel/WSJ-Minute-Briefing-id1403332
+2019-10-04 14:22:54.291610 - processed features on page2019-10-04 14:22:59.391354 - clicked reverse button
+2019-10-04 14:23:04.414464 - found first date
+
+Now scraping https://castbox.fm/channel/Behind-The-Baller-Podcast-with-Ben-Baller-id2228644
+2019-10-04 14:23:06.181598 - processed features on page2019-10-04 14:23:11.245606 - clicked reverse button
+2019-10-04 14:23:16.269074 - found first date
+
+Now scraping https://castbox.fm/channel/Don't-Keep-Your-Day-Job-id446733
+2019-10-04 14:23:18.451889 - processed features on page2019-10-04 14:23:23.509407 - clicked reverse button
+2019-10-04 14:23:28.536535 - found first date
+
+Now scraping https://castbox.fm/channel/Girlboss-Radio-with-Sophia-Amoruso-id1265998
+2019-10-04 14:23:30.559925 - processed features on page2019-10-04 14:23:35.634671 - clicked reverse button
+2019-10-04 14:23:40.657854 - found first date
+
+Now scraping https://castbox.fm/channel/The-BossBabe-Podcast-id2023432
+2019-10-04 14:23:42.736652 - processed features on page2019-10-04 14:23:47.801775 - clicked reverse button
+2019-10-04 14:23:52.829535 - found first date
+
+Now scraping https://castbox.fm/channel/Motley-Fool-Money-id2071534
+2019-10-04 14:23:55.947843 - processed features on page2019-10-04 14:24:01.025542 - clicked reverse button
+2019-10-04 14:24:06.052598 - found first date
+
+Now scraping https://castbox.fm/channel/The-Peter-Schiff-Show-Podcast-id1078959
+2019-10-04 14:24:08.413889 - processed features on page2019-10-04 14:24:13.478987 - clicked reverse button
+2019-10-04 14:24:18.505469 - found first date
+
+Now scraping https://castbox.fm/channel/Entrepreneurs-on-Fire-id107641
+2019-10-04 14:24:20.385765 - processed features on page2019-10-04 14:24:25.449669 - clicked reverse button
+2019-10-04 14:24:30.476539 - found first date
+
+Now scraping https://castbox.fm/channel/So-Money-with-Farnoosh-Torabi-id2124916
+2019-10-04 14:24:32.909822 - processed features on page2019-10-04 14:24:37.983935 - clicked reverse button
+2019-10-04 14:24:43.010071 - found first date
+
+Now scraping https://castbox.fm/channel/The-Influencer-Podcast-id1368920
+2019-10-04 14:24:45.921163 - processed features on page2019-10-04 14:24:50.989186 - clicked reverse button
+2019-10-04 14:24:56.014172 - found first date
+
+Now scraping https://castbox.fm/channel/Focus-on-This-id2355622
+2019-10-04 14:24:57.827587 - processed features on page2019-10-04 14:25:02.886538 - clicked reverse button
+2019-10-04 14:25:07.910851 - found first date
+
+Now scraping https://castbox.fm/channel/Order-of-Man%3A-Protect-|-Provide-|-Preside-id483
+2019-10-04 14:25:10.241153 - processed features on page2019-10-04 14:25:15.312548 - clicked reverse button
+2019-10-04 14:25:20.335455 - found first date
+
+Now scraping https://castbox.fm/channel/Make-Me-Smart-with-Kai-and-Molly-id424515
+2019-10-04 14:25:22.264478 - processed features on page2019-10-04 14:25:27.329869 - clicked reverse button
+2019-10-04 14:25:32.350584 - found first date
+
+Now scraping https://castbox.fm/channel/LEAVE-YOUR-MARK-id2387896
+2019-10-04 14:25:33.700509 - processed features on page2019-10-04 14:25:38.761391 - clicked reverse button
+2019-10-04 14:25:43.787539 - found first date
+
+Now scraping https://castbox.fm/channel/The-Pitch-id583620
+2019-10-04 14:25:59.874481 - processed features on page2019-10-04 14:26:04.945001 - clicked reverse button
+2019-10-04 14:26:09.970018 - found first date
+
+Now scraping https://castbox.fm/channel/Invest-Like-the-Best-id1181615
+2019-10-04 14:26:12.567021 - processed features on page2019-10-04 14:26:17.637820 - clicked reverse button
+2019-10-04 14:26:22.662795 - found first date
+
+Now scraping https://castbox.fm/channel/The-Anxious-Achiever-id2381701
+2019-10-04 14:26:25.910038 - processed features on page2019-10-04 14:26:30.973077 - clicked reverse button
+2019-10-04 14:26:35.997299 - found first date
+
+Now scraping https://castbox.fm/channel/Bloomberg-Surveillance-id966375
+2019-10-04 14:26:38.021449 - processed features on page2019-10-04 14:26:43.096640 - clicked reverse button
+2019-10-04 14:26:48.123081 - found first date
+
+Now scraping https://castbox.fm/channel/Household-Name-id1372687
+2019-10-04 14:26:50.167022 - processed features on page2019-10-04 14:26:55.247183 - clicked reverse button
+2019-10-04 14:27:00.272109 - found first date
+
+Now scraping https://castbox.fm/channel/StartUp-Podcast-id2268945
+2019-10-04 14:27:02.697379 - processed features on page2019-10-04 14:27:07.769372 - clicked reverse button
+2019-10-04 14:27:12.797592 - found first date
+
+Now scraping https://castbox.fm/channel/The-Stacking-Benjamins-Show-id2286
+2019-10-04 14:27:14.575809 - processed features on page2019-10-04 14:27:19.647988 - clicked reverse button
+2019-10-04 14:27:24.676594 - found first date
+
+Now scraping https://castbox.fm/channel/The-Brian-Buffini-Show-id174897
+2019-10-04 14:27:28.616589 - processed features on page2019-10-04 14:27:33.683479 - clicked reverse button
+2019-10-04 14:27:38.710305 - found first date
+
+Now scraping https://castbox.fm/channel/Legal-Wars-id1439236
+2019-10-04 14:27:41.448908 - processed features on page2019-10-04 14:27:46.512756 - clicked reverse button
+2019-10-04 14:27:51.540419 - found first date
+
+Now scraping https://castbox.fm/channel/Radical-Personal-Finance-id2306
+2019-10-04 14:27:53.903067 - processed features on page2019-10-04 14:27:58.964693 - clicked reverse button
+2019-10-04 14:28:03.988678 - found first date
+
+Now scraping https://castbox.fm/channel/The-Side-Hustle-Show-id432083
+2019-10-04 14:28:07.258173 - processed features on page2019-10-04 14:28:12.328258 - clicked reverse button
+2019-10-04 14:28:17.353887 - found first date
+
+Now scraping https://castbox.fm/channel/MOMTRUTHS-with-Cat-%26-Nat-id1461752
+2019-10-04 14:28:19.932881 - processed features on page2019-10-04 14:28:25.014584 - clicked reverse button
+2019-10-04 14:28:30.040234 - found first date
+
+Now scraping https://castbox.fm/channel/Social-Media-Marketing-Podcast-id1969397
+2019-10-04 14:28:32.321594 - processed features on page2019-10-04 14:28:37.388058 - clicked reverse button
+2019-10-04 14:28:42.414435 - found first date
+
+Now scraping https://castbox.fm/channel/Marketplace-All-in-One-id432983
+2019-10-04 14:28:44.703989 - processed features on page2019-10-04 14:28:49.767068 - clicked reverse button
+2019-10-04 14:28:54.792467 - found first date
+
+Now scraping https://castbox.fm/channel/EmpowerHER-id1493356
+2019-10-04 14:28:56.785309 - processed features on page2019-10-04 14:29:01.859046 - clicked reverse button
+2019-10-04 14:29:06.884086 - found first date
+
+Now scraping https://castbox.fm/channel/BiggerPockets-Business-Podcast-id2208474
+2019-10-04 14:29:16.621629 - processed features on page2019-10-04 14:29:21.697674 - clicked reverse button
+2019-10-04 14:29:26.723715 - found first date
+
+Now scraping https://castbox.fm/channel/Increase-Your-Impact-with-Justin-Su'a-|-A-Podcast-For-Leaders-id8128
+2019-10-04 14:29:28.472867 - processed features on page2019-10-04 14:29:33.549411 - clicked reverse button
+2019-10-04 14:29:38.572150 - found first date
+
+Now scraping https://castbox.fm/channel/The-Investing-for-Beginners-Podcast-Your-Path-to-Financial-Freedom-id483524
+2019-10-04 14:29:40.746506 - processed features on page2019-10-04 14:29:45.807358 - clicked reverse button
+2019-10-04 14:29:50.831816 - found first date
+
+Now scraping https://castbox.fm/channel/Flip-The-Script-id2361689
+2019-10-04 14:29:53.840494 - processed features on page2019-10-04 14:29:58.891765 - clicked reverse button
+2019-10-04 14:30:03.914184 - found first date
+
+Now scraping https://castbox.fm/channel/HerMoney-with-Jean-Chatzky-id264639
+2019-10-04 14:30:06.258054 - processed features on page2019-10-04 14:30:11.336339 - clicked reverse button
+2019-10-04 14:30:16.364618 - found first date
+
+Now scraping https://castbox.fm/channel/Do-It-Scared®-with-Ruth-Soukup-id1232044
+2019-10-04 14:30:18.228663 - processed features on page2019-10-04 14:30:23.289555 - clicked reverse button
+2019-10-04 14:30:28.312105 - found first date
+
+Now scraping https://castbox.fm/channel/White-Coat-Investor-Podcast-id454847
+2019-10-04 14:30:31.465919 - processed features on page2019-10-04 14:30:36.538122 - clicked reverse button
+2019-10-04 14:30:41.563892 - found first date
+
+Now scraping https://castbox.fm/channel/Financial-Independence-Podcast-id8154
+2019-10-04 14:30:43.335784 - processed features on page2019-10-04 14:30:48.390382 - clicked reverse button
+2019-10-04 14:30:53.415589 - found first date
+
+Now scraping https://castbox.fm/channel/CNBC's-"Fast-Money"-id1096418
+2019-10-04 14:30:56.044875 - processed features on page2019-10-04 14:31:01.116867 - clicked reverse button
+2019-10-04 14:31:06.144315 - found first date
+
+Now scraping https://castbox.fm/channel/Marketing-School-Digital-Marketing-and-Online-Marketing-Tips-id363254
+2019-10-04 14:31:09.714644 - processed features on page2019-10-04 14:31:14.780375 - clicked reverse button
+2019-10-04 14:31:19.806423 - found first date
+
+Now scraping https://castbox.fm/channel/How-to-Be-Awesome-at-Your-Job-id291510
+2019-10-04 14:31:22.835694 - processed features on page2019-10-04 14:31:27.899701 - clicked reverse button
+2019-10-04 14:31:32.926890 - found first date
+
+Now scraping https://castbox.fm/channel/Lead-to-Win-with-Michael-Hyatt-id1068826
+2019-10-04 14:31:35.030094 - processed features on page2019-10-04 14:31:40.108244 - clicked reverse button
+2019-10-04 14:31:45.135079 - found first date

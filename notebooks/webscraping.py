@@ -179,82 +179,100 @@ def process_channel_soup(chan_url, html):
     Return a dictionary of features for that channel.
 
     '''
-
-    f = {}
-
-    soup = BeautifulSoup(html, 'lxml')
-
-    ##### Individual Channel Features #####
-
-    # channel title for validation
-    f['title'] = soup.find(class_='ch_feed_info_title').find('span').text
-
-    f['chan_url'] = chan_url
     
-    print('scraping: ', f['title'])
-    
-    comment_el = re.sub('[\(\)]', '', soup.find(class_='commentList-title').find('span').text.split('\xa0')[-1])
-    
-    if len(comment_el) == 0:
-        num_comments = '0'
-    else:
-        num_comments = int(comment_el)
-#     print(num_comments)
+    scrape_attempts = 0
+    while scrape_attempts < 5:
+        
+        scrape_attempts += 1
+        # some scrapes are failing. Introduce multiple attempts.
+        
+        try:
+            
+            f = {}
 
-    f['num_comments'] = int(num_comments)
+            soup = BeautifulSoup(html, 'lxml')
 
-    # channel author
-    f['author'] = soup.find(class_='author').text.split(':')[-1].strip().replace(',','')
-    
-    f['description'] = soup.find(class_='des-con').text.split(':')[-1].strip().replace(',','')
+            ##### Individual Channel Features #####
 
-    # if the channel has the isExplicit class (I believe this global label
-    # is applied if any of podcasts are marked as 'E')
-    f['isExplicit'] = int(bool(soup.find_all('h1', {'class': 'isExplicit'})))
+            # channel title for validation
+            f['title'] = soup.find(class_='ch_feed_info_title').find('span').text
 
-    # subscriber count
-    f['sub_count'] = int(soup.find(class_='sub_count').text.split(':')[-1].strip().replace(',',''))
+            f['chan_url'] = chan_url
 
-    # total channel plays for all episodes
-    f['play_count'] = int(soup.find(class_='play_count').text.split(':')[-1].strip().replace(',',''))
+            print('scraping: ', f['title'])
 
-    # all listed social feeds, including channel website
-    f['ch_feed-socials'] = [a.get('href') for a in soup.find(class_='ch_feed-socials').find_all('a')]
+            comment_el = re.sub('[\(\)]', '', soup.find(class_='commentList-title').find('span').text.split('\xa0')[-1])
 
-    print('episode total div: \n', soup.find(class_='trackListCon_title').text.split('\xa0')[0])
-    
-    # episode count
-    f['ep_total'] = int(soup.find(class_='trackListCon_title').text.split('\xa0')[0].strip().replace(',',''))
+            if len(comment_el) == 0:
+                num_comments = '0'
+            else:
+                num_comments = int(comment_el)
+        #     print(num_comments)
+            
+            f['num_comments'] = int(num_comments)
 
-    # grab all (visible) episode rows
-    visible_eps = soup.find_all(class_='ep-item')
-    recent_eps = []
+            # channel author
+            f['author'] = soup.find(class_='author').text.split(':')[-1].strip().replace(',','')
 
-    # iterate through all visible episodes and grab basic info
-    for ep in visible_eps:
-        ep_name = ep.find('span', class_='ellipsis').text
-        ep_date = ep.find('span', class_='date').text
-        ep_len = ep.find('span', class_='time').text
-        favs = ep.find_all(class_='heart')
-#         print(favs[0].parent)
-        if len(favs) > 0:
-            ep_favs = int(favs[0].parent.text)
-        else:
-            ep_favs = 0
-        recent_eps += [[ep_date, ep_len, ep_favs]]
+            f['description'] = soup.find(class_='des-con').text.split(':')[-1].strip().replace(',','')
 
-    f['recent_eps'] = recent_eps
+            # if the channel has the isExplicit class (I believe this global label
+            # is applied if any of podcasts are marked as 'E')
+            f['isExplicit'] = int(bool(soup.find_all('h1', {'class': 'isExplicit'})))
 
-    #### TEXT BASED FEATURES ####
+            # subscriber count
+            f['sub_count'] = int(soup.find(class_='sub_count').text.split(':')[-1].strip().replace(',',''))
 
-    # grab all of the hover text for all episodes: ep-item-desmodal-con
-    f['hover_text_concat'] = ' | '.join([s.text for s in soup.find_all(class_='ep-item-desmodal-con')])
+            # total channel plays for all episodes
+            f['play_count'] = int(soup.find(class_='play_count').text.split(':')[-1].strip().replace(',',''))
 
-    # channel description
-    f['chan_desc'] = soup.find(class_='des-con').text
+            # all listed social feeds, including channel website
+            f['ch_feed-socials'] = [a.get('href') for a in soup.find(class_='ch_feed-socials').find_all('a')]
+
+        #     print('episode total div: \n', soup.find(class_='trackListCon_title').text.split('\xa0')[0])
+
+            # episode count
+            f['ep_total'] = soup.find(class_='trackListCon_title').text.split('\xa0')[0]
+            print(f['ep_total'])
+
+            # grab all (visible) episode rows
+            visible_eps = soup.find_all(class_='ep-item')
+            recent_eps = []
+
+            # iterate through all visible episodes and grab basic info
+            for ep in visible_eps:
+                ep_name = ep.find('span', class_='ellipsis').text
+                ep_date = ep.find('span', class_='date').text
+                ep_len = ep.find('span', class_='time').text
+                favs = ep.find_all(class_='heart')
+        #         print(favs[0].parent)
+                if len(favs) > 0:
+                    ep_favs = int(favs[0].parent.text)
+                else:
+                    ep_favs = 0
+                recent_eps += [[ep_date, ep_len, ep_favs]]
+
+            f['recent_eps'] = recent_eps
+
+            #### TEXT BASED FEATURES ####
+
+            # grab all of the hover text for all episodes: ep-item-desmodal-con
+            f['hover_text_concat'] = ' | '.join([s.text for s in soup.find_all(class_='ep-item-desmodal-con')])
+
+            # channel description
+            f['chan_desc'] = soup.find(class_='des-con').text
 
 
-    f['cover_img_url'] = soup.find(class_='coverImgContainer').find('img').get('src')
+            f['cover_img_url'] = soup.find(class_='coverImgContainer').find('img').get('src')
+            
+            print('successfully scraped ',f['title'])
+            break
+            
+        except:
+            print('failed scrape for ', f['title'])
+            continue
+        
+    # end while
 
     return f
 
@@ -289,7 +307,7 @@ def scrape_channel_page(chan_url, dr, window_rect=(0,0,500,800)):
 
         html = dr.page_source
 #         print('html:\n', html)
-        print(html[-100:])
+#         print(html[-100:])
         assert len(html) != 0
 
         features = process_channel_soup(chan_url, html)
@@ -338,7 +356,7 @@ def scrape_all_pods_in_category(chan_dict, category, dr, export=False):
         print('scraped so far:')
         print(' | '.join(list(scraped.chan_title)))
         
-    for chan in category_list[:30]:
+    for chan in category_list[:100]:
 #         print(chan)
 #         print(type(chan))
 #         print(len(scraped[scraped.chan_title == chan]))
