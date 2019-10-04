@@ -191,18 +191,22 @@ def process_channel_soup(chan_url, html):
 
     f['chan_url'] = chan_url
     
+    print('scraping: ', f['title'])
+    
     comment_el = re.sub('[\(\)]', '', soup.find(class_='commentList-title').find('span').text.split('\xa0')[-1])
     
     if len(comment_el) == 0:
         num_comments = '0'
     else:
         num_comments = int(comment_el)
-    print(num_comments)
+#     print(num_comments)
 
     f['num_comments'] = int(num_comments)
 
     # channel author
     f['author'] = soup.find(class_='author').text.split(':')[-1].strip().replace(',','')
+    
+    f['description'] = soup.find(class_='des-con').text.split(':')[-1].strip().replace(',','')
 
     # if the channel has the isExplicit class (I believe this global label
     # is applied if any of podcasts are marked as 'E')
@@ -217,6 +221,8 @@ def process_channel_soup(chan_url, html):
     # all listed social feeds, including channel website
     f['ch_feed-socials'] = [a.get('href') for a in soup.find(class_='ch_feed-socials').find_all('a')]
 
+    print('episode total div: \n', soup.find(class_='trackListCon_title').text.split('\xa0')[0])
+    
     # episode count
     f['ep_total'] = int(soup.find(class_='trackListCon_title').text.split('\xa0')[0].strip().replace(',',''))
 
@@ -283,17 +289,18 @@ def scrape_channel_page(chan_url, dr, window_rect=(0,0,500,800)):
 
         html = dr.page_source
 #         print('html:\n', html)
+        print(html[-100:])
         assert len(html) != 0
 
         features = process_channel_soup(chan_url, html)
         log.write(str(dt.datetime.now()) + ' - processed features on page')
         
-        time.sleep(0.2)
+        time.sleep(5)
         reverse_btn = dr.find_element_by_class_name('funcBtn-item')
         reverse_btn.click()
         log.write(str(dt.datetime.now()) + ' - clicked reverse button' + '\n')
         
-        time.sleep(2)
+        time.sleep(5)
 
     #     date_path = '/html/body/div/div/div[1]/div/div[2]/div[4]/div[3]/div/div/div/div[1]/div[2]/div/section[1]/div[1]/div[2]/p/span[1]'
 
@@ -331,7 +338,7 @@ def scrape_all_pods_in_category(chan_dict, category, dr, export=False):
         print('scraped so far:')
         print(' | '.join(list(scraped.chan_title)))
         
-    for chan in category_list[:10]:
+    for chan in category_list[:30]:
 #         print(chan)
 #         print(type(chan))
 #         print(len(scraped[scraped.chan_title == chan]))
@@ -340,7 +347,7 @@ def scrape_all_pods_in_category(chan_dict, category, dr, export=False):
             continue
         
         chan_url = chan_dict[category][chan]['chan_url']
-        features = scrape_channel_page(chan_url, dr, window_rect=(0, 0, 600, 1000)) 
+        features = scrape_channel_page(chan_url, dr, window_rect=(0, 0, 600, 1200)) 
         chan_title = features['title']
         
         # add feature dictionary as single line in .txt
