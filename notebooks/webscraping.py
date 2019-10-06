@@ -64,7 +64,7 @@ def get_category_source(url, dr):
     def scroll_bottom():
         '''
 
-        Thwart infinite scroll. Takes driver as input
+        Thwart infinite scroll.
         Thanks to @ Matthew Eungoo Lee starting me off with this snippet.
 
         '''
@@ -170,7 +170,7 @@ def scrape_full_category_page(url, dr):
     return category_name, category_dict
 
 
-def process_channel_soup(chan_url, html):
+def process_channel_soup(chan_url, html, dr):
     '''
 
     Build features from scraped html of url.
@@ -181,13 +181,32 @@ def process_channel_soup(chan_url, html):
     '''
     
     scrape_attempts = 0
+    debug = False
     while scrape_attempts < 5:
         
         scrape_attempts += 1
         # some scrapes are failing. Introduce multiple attempts.
         
+        if debug:
+            dr.get(chan_url + '?country=us')
+            time.sleep(3)
+
+            try:
+                # try to close annoying cookie verification
+                cookie = dr.find_element_by_class_name('allow')
+                cookie.click()
+                log.write(str(dt.datetime.now()) + ' - closed popup')
+            except:
+                # unless it's not there
+                pass
+
+            html = dr.page_source
+    #         print('html:\n', html)
+    #         print(html[-100:])
+            assert len(html) != 0
+        
         try:
-            
+            print('trying to scrape ', chan_url, ' attempt #', scrape_attempts)
             f = {}
 
             soup = BeautifulSoup(html, 'lxml')
@@ -199,22 +218,23 @@ def process_channel_soup(chan_url, html):
 
             f['chan_url'] = chan_url
 
-            print('scraping: ', f['title'])
+            print('scraping....... ', f['title'])
 
             comment_el = re.sub('[\(\)]', '', soup.find(class_='commentList-title').find('span').text.split('\xa0')[-1])
 
             if len(comment_el) == 0:
-                num_comments = '0'
+                num_comments = 0
             else:
                 num_comments = int(comment_el)
         #     print(num_comments)
+            
+            if debug:
+                print('checkpoint A')
             
             f['num_comments'] = int(num_comments)
 
             # channel author
             f['author'] = soup.find(class_='author').text.split(':')[-1].strip().replace(',','')
-
-            f['description'] = soup.find(class_='des-con').text.split(':')[-1].strip().replace(',','')
 
             # if the channel has the isExplicit class (I believe this global label
             # is applied if any of podcasts are marked as 'E')
@@ -222,23 +242,45 @@ def process_channel_soup(chan_url, html):
 
             # subscriber count
             f['sub_count'] = int(soup.find(class_='sub_count').text.split(':')[-1].strip().replace(',',''))
+            
+            if debug:
+                print('checkpoint B')
 
             # total channel plays for all episodes
             f['play_count'] = int(soup.find(class_='play_count').text.split(':')[-1].strip().replace(',',''))
 
             # all listed social feeds, including channel website
             f['ch_feed-socials'] = [a.get('href') for a in soup.find(class_='ch_feed-socials').find_all('a')]
-
+            
+            if debug:
+                print('checkpoint B-2')
         #     print('episode total div: \n', soup.find(class_='trackListCon_title').text.split('\xa0')[0])
 
             # episode count
             f['ep_total'] = soup.find(class_='trackListCon_title').text.split('\xa0')[0]
-            print(f['ep_total'])
+#             print(f['ep_total'])
+            
+            if debug:
+                print('checkpoint C')
+                
+            try:
+                f['ep_total'] = int(f['ep_total'])
+            except:
+                # failed to grab episodes, for whatever reason
+                print('Episode total scraped as non-integer... rescraping ', f['title'])
+                print(f['ep_total'])
+                debug = True
+            
+                continue
 
             # grab all (visible) episode rows
             visible_eps = soup.find_all(class_='ep-item')
             recent_eps = []
-
+            
+            if debug:
+                print('checkpoint D')
+                
+#             print(visible_eps)
             # iterate through all visible episodes and grab basic info
             for ep in visible_eps:
                 ep_name = ep.find('span', class_='ellipsis').text
@@ -250,10 +292,21 @@ def process_channel_soup(chan_url, html):
                     ep_favs = int(favs[0].parent.text)
                 else:
                     ep_favs = 0
+#                 print(ep_date, ep_len, ep_favs)
                 recent_eps += [[ep_date, ep_len, ep_favs]]
 
+#             print(recent_eps)
             f['recent_eps'] = recent_eps
-
+            
+            if len(f['recent_eps']) == 0:
+                # failed to grab episodes, for whatever reason
+                print('Didn\'t properly grab recent episodes... rescraping', f['title'])
+                debug = True
+                continue
+            
+            if debug:
+                print('checkpoint E')
+                
             #### TEXT BASED FEATURES ####
 
             # grab all of the hover text for all episodes: ep-item-desmodal-con
@@ -262,22 +315,28 @@ def process_channel_soup(chan_url, html):
             # channel description
             f['chan_desc'] = soup.find(class_='des-con').text
 
-
             f['cover_img_url'] = soup.find(class_='coverImgContainer').find('img').get('src')
             
-            print('successfully scraped ',f['title'])
+            if debug:
+                print('checkpoint F')
+            
+            print('COMPLETED scraping ',f['title'])
             break
             
         except:
-            print('failed scrape for ', f['title'])
+            print('Failed scrape for ', f['title'], ' rescraping...')
+            debug = True
+            time.sleep(1)
+            
             continue
+            
         
     # end while
 
     return f
 
 
-def scrape_channel_page(chan_url, dr, window_rect=(0,0,500,800)):
+def scrape_channel_page(chan_url, dr):
     '''
 
     Scrape a single channel page.
@@ -291,18 +350,17 @@ def scrape_channel_page(chan_url, dr, window_rect=(0,0,500,800)):
         log.write('\n')
         log.write('Now scraping ' + str(chan_url)+ '\n')
 
-        dr.set_window_rect(*window_rect)
         # driver = webdriver.Chrome(chromedriver)
 
         dr.get(chan_url + '?country=us')
 
         try:
-            # close annoying cookie verification
+            # try to close annoying cookie verification
             cookie = dr.find_element_by_class_name('allow')
             cookie.click()
             log.write(str(dt.datetime.now()) + ' - closed popup')
         except:
-            # sometimes the cookie doesn't appear
+            # unless it's not there
             pass
 
         html = dr.page_source
@@ -310,7 +368,7 @@ def scrape_channel_page(chan_url, dr, window_rect=(0,0,500,800)):
 #         print(html[-100:])
         assert len(html) != 0
 
-        features = process_channel_soup(chan_url, html)
+        features = process_channel_soup(chan_url, html, dr)
         log.write(str(dt.datetime.now()) + ' - processed features on page')
         
         time.sleep(5)
@@ -344,8 +402,10 @@ def scrape_all_pods_in_category(chan_dict, category, dr, export=False):
     
     '''
     
+    print(f'Scraping {category} category...')
     
-    output = ''
+    window_rect=(0, 0, 800, 1200)
+    dr.set_window_rect(*window_rect)
     
     category_list = list(chan_dict[category].keys())
     
@@ -353,37 +413,64 @@ def scrape_all_pods_in_category(chan_dict, category, dr, export=False):
     with open('../scraped/channel/already_scraped.csv', 'r') as file:
         scraped = pd.read_csv(file, names=['chan_title','chan_url','category'])
         file.close()
-        print('scraped so far:')
-        print(' | '.join(list(scraped.chan_title)))
+#         print('scraped so far:')
+#         print(' | '.join(list(scraped.chan_title)))
         
-    for chan in category_list[:100]:
+    for chan in category_list:
+#       
+        fail = False
+        
 #         print(chan)
 #         print(type(chan))
 #         print(len(scraped[scraped.chan_title == chan]))
         if len(scraped[scraped.chan_title == chan]) != 0:
-            print('[ skipping: ', chan, ' ] ')
+#             print('[ skipping: ', chan, ' ] ')
             continue
         
         chan_url = chan_dict[category][chan]['chan_url']
-        features = scrape_channel_page(chan_url, dr, window_rect=(0, 0, 600, 1200)) 
-        chan_title = features['title']
         
+        try:
+            features = scrape_channel_page(chan_url, dr)
+        except:
+            'channel scrape error, not exporting'
+            pass
+        
+#         print(features['recent_eps'], ' has len ', len(features['recent_eps']))
+        
+        # various validations that channel was correctly scraped:
+        if len(features) == 0:
+            print(f'{chan_title} invalidly scraped. not exporting.')
+            fail = True
+        if len(features['recent_eps']) == 0:
+            print(f'{chan_title} invalidly scraped. not exporting.')
+            fail = True
+        
+        try:
+            chan_title = features['title']
+        except:
+            print('key error: ', chan)
+            continue
+            
         # add feature dictionary as single line in .txt
-        if export==True:
+        if (export==True) or (fail == True):
             export_path = '../scraped/channel/by_category/' + category + '.txt'
             with open(export_path, 'a') as file:
-                
                 feat_dict = {chan_title: features}
                 file.write(str(feat_dict) + '\n\n')
                 file.close()
-            
+                  
             # log when channel has been scraped
             export_path = '../scraped/channel/already_scraped.csv'
             with open(export_path, 'a') as file:
                 scraped_chan = str(chan) + ',' + str(chan_url) + ',' + str(category)
                 file.write(scraped_chan + '\n')
                 file.close()
-    print('no more channels to scrape')
+        else:
+            print('DEBUG: features dictionary for ', chan_title)
+            print(features)
+                
+    print(f'No more channels in {category} category to scrape. Moving on to next category.')
+    
     dr.quit()
             
 
