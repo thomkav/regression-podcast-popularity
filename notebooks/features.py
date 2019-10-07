@@ -11,6 +11,7 @@ import math
 import time
 import re
 import numpy as np
+import ast
 
 
 
@@ -78,6 +79,26 @@ def lifetime_ep_freq(row):
         
     return freq
 
+def chan_age(row):
+    '''
+    
+    time b/t first and latest podcast
+    
+    Example:
+    df['lifetime_ep_freq'] = df.apply(chan_age, axis=1)
+    
+    '''
+    
+    last_ep_date = convert_ep_date(row['recent_eps'][0][0])
+    release_date = convert_ep_date(row['first_release'])
+    ep_total = row['ep_total']
+    
+    
+    
+    age = (last_ep_date - release_date).total_seconds() / (24. * 60. * 60.)
+    
+    return age
+
 
 def avg_ep_len(recent_eps):
     '''
@@ -91,7 +112,16 @@ def avg_ep_len(recent_eps):
     '''
     
     
-    ep_lens = [time.strptime(ep[1], '%H:%M:%S') for ep in recent_eps]
+    try:
+        ep_lens = []
+        for ep in recent_eps:
+            try:
+                parsed_time = time.strptime(ep[1], '%H:%M:%S')
+                ep_lens += [parsed_time]
+            except:
+                pass
+    except:
+        print(f'time parse error with entry {recent_eps}')
     
 #     print(ep_lens)
     avg_ep_len = np.mean(ep_lens)
@@ -160,6 +190,63 @@ def sanitize(df):
     
     return df
 
+def raw_to_df(cat_name):
+    
+    cat_dict = {}
+    
+    filename = '../scraped/channel/by_category/' + cat_name + '.txt'
+    
+    with open(filename, 'r') as file:
+        
+        for line in file:
+            
+            try:
+                pod_dict = ast.literal_eval(line)
+                chan_name = [k for k in pod_dict.keys()][0]
+                cat_dict[chan_name] = pod_dict[chan_name]
+            except:
+                continue
+        
+    df = pd.DataFrame.from_dict(cat_dict, orient='index')
+    df = df.reset_index().drop(labels='index',axis=1)
+    df['category'] = cat_name 
+    
+    # various sanitation tasks
+    df = sanitize(df)
+
+    export_path = '../scraped/channel/by_category/' + cat_name + '.pickle'
+    with open(export_path, 'wb') as file:
+        pickle.dump(df, file)
+    
+    return df
+
+
+def merge_raw_data(scraped_categories):
+    '''
+    
+    Take a list of scraped categories in its directory,
+    and append 
+    
+    '''
+    
+    # append other dataframes to base dataframe
+    for scraped in scraped_categories:
+        
+        next_df = ft.raw_to_df(scraped)
+        print(f'loaded {scraped} with size {next_df.shape}')
+        
+        try:
+            print('appending... ', scraped)
+            df = df.append(next_df)
+        except:
+            print('first dataframe... ', scraped)
+            df = next_df.copy()
+        
+        print(f'dataframe now has size {df.shape}')
+        
+        
+    return df
+
 
 def build_features(df):
     '''
@@ -169,12 +256,13 @@ def build_features(df):
     '''
     
     
-    df['recent_ep_spacing'] = df.recent_eps.apply(ft.recent_ep_mean_dist)
-    df['lifetime_ep_freq'] = df.apply(ft.lifetime_ep_freq, axis=1)
-    df['avg_ep_len'] = df.recent_eps.apply(ft.avg_ep_len)
+    df['recent_ep_spacing'] = df.recent_eps.apply(recent_ep_mean_dist)
+    df['lifetime_ep_freq'] = df.apply(lifetime_ep_freq, axis=1)
+    df['avg_ep_len'] = df.recent_eps.apply(avg_ep_len)
+    df['chan_age'] = df.apply(chan_age, axis=1)
     
     social_domains = ['twitter', 'facebook', 'youtube', 'instagram']
     for domain in social_domains:
-        df[domain] = df['ch_feed-socials'].apply(ft.has_domain,social_domain=domain)
+        df[domain] = df['ch_feed-socials'].apply(has_domain,social_domain=domain)
     
     return df
