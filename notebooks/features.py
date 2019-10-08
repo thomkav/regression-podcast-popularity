@@ -258,22 +258,72 @@ def merge_raw_data(scraped_categories):
         
     return df
 
+def get_twitter_follower_count(title):
+    '''
+    
+    Pull the follower count for a podcast,
+    if it exists in a dictionary of channels.
+    
+    If it doesn't exist, return 0.
+    
+    
+    '''
+    
+    
+    with open('../social_metrics/twitter/channel_stats_by_name_oct8_2p.pickle', 'rb') as file:
+        twitter_dict = pickle.load(file)
+        
+    try:
+        return twitter_dict[title]['follower_count']
+    except:
+        return 0
+    
 
 def build_features(df):
     '''
     
-    Build feature columns.
+    Build all feature columns in one shot.
     
     '''
     
+    #################################################
+    # Episode Time Series Features
+    #################################################
     
-    df['recent_ep_spacing'] = df.recent_eps.apply(recent_ep_mean_dist)
-    df['lifetime_ep_freq'] = df.apply(lifetime_ep_freq, axis=1)
-    df['avg_ep_len'] = df.recent_eps.apply(avg_ep_len)
-    df['chan_age'] = df.apply(chan_age, axis=1)
+    try:
+        df['recent_ep_spacing'] = df.recent_eps.apply(recent_ep_mean_dist)
+    except:
+        print('Error: failed to build recent_ep_spacing feature')
+    
+    try:
+        df['lifetime_ep_freq'] = df.apply(lifetime_ep_freq, axis=1)
+    except:
+        print('Error: failed to build lifetime_ep_freq feature')
+    
+    try:
+        df['avg_ep_len'] = df.recent_eps.apply(avg_ep_len)
+    except:
+        print('Error: failed to build avg_ep_len feature')
+    
+    try:
+        df['chan_age'] = df.apply(chan_age, axis=1)
+    except:
+        print('Error: failed to build chan_age feature')
+    
+    #################################################
+    # Social Account Metrics
+    #################################################
     
     social_domains = ['twitter', 'facebook', 'youtube', 'instagram']
     for domain in social_domains:
-        df[domain] = df['ch_feed-socials'].apply(has_domain,social_domain=domain)
+        try:
+            df['has_'+domain] = df['ch_feed-socials'].apply(has_domain,social_domain=domain)
+        except:
+            print(f'Error: failed to build has_{domain} binary feature')
+    
+    try:
+        df['twitter_followers'] = df.title.apply(get_twitter_follower_count)
+    except:
+        print('Error: failed to build twitter_followers feature')
     
     return df
