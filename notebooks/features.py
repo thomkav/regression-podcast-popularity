@@ -38,15 +38,19 @@ def recent_ep_mean_dist(recent_eps):
     
     '''
     
-#     print(type(recent_eps))
-    ep_list = [convert_ep_date(ep[0]) for ep in recent_eps]
-#     print(ep_list)
-    
-    days_bt_eps = []
-    for i in range(len(ep_list)-1):
-        days_bt_eps += [(abs(ep_list[i+1] - ep_list[i])).days]
+    try:
+    #     print(type(recent_eps))
+        ep_list = [convert_ep_date(ep[0]) for ep in recent_eps]
+    #     print(ep_list)
 
-    return pd.Series(days_bt_eps).mean()
+        days_bt_eps = []
+        for i in range(len(ep_list)-1):
+            days_bt_eps += [(abs(ep_list[i+1] - ep_list[i])).days]
+
+        return pd.Series(days_bt_eps).mean()
+    
+    except:
+        return 0
 
 
 def lifetime_ep_freq(row):
@@ -60,24 +64,27 @@ def lifetime_ep_freq(row):
     df['lifetime_ep_freq'] = df.apply(lifetime_ep_freq, axis=1)
     
     '''
-    
-    last_ep_date = convert_ep_date(row['recent_eps'][0][0])
-    release_date = convert_ep_date(row['first_release'])
-    ep_total = row['ep_total']
-    
-    
-    
-    age = (last_ep_date - release_date).total_seconds() / (24. * 60. * 60.)
-    
-    if age == 0:
-        freq = 0
-    else:
-        freq = ep_total / age
+    try:
+        last_ep_date = convert_ep_date(row['recent_eps'][0][0])
+        release_date = convert_ep_date(row['first_release'])
+        ep_total = row['ep_total']
 
-#     print(last_ep_date, release_date, ep_total, age, freq)
 
-        
-    return freq
+
+        age = (last_ep_date - release_date).total_seconds() / (24. * 60. * 60.)
+
+        if age == 0:
+            freq = 0
+        else:
+            freq = ep_total / age
+
+        #     print(last_ep_date, release_date, ep_total, age, freq)
+
+
+        return freq
+    
+    except:
+        return 0
 
 def chan_age(row):
     '''
@@ -122,9 +129,13 @@ def avg_ep_len(recent_eps):
                 pass
     except:
         print(f'time parse error with entry {recent_eps}')
+        return 0
     
 #     print(ep_lens)
-    avg_ep_len = np.mean(ep_lens)
+    try:
+        avg_ep_len = np.mean(ep_lens)
+    except:
+        return 0
 
     return avg_ep_len
 
