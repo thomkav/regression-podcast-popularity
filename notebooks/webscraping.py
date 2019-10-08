@@ -218,7 +218,7 @@ def process_channel_soup(chan_url, html, dr):
 
             f['chan_url'] = chan_url
 
-            print('scraping....... ', f['title'])
+#             print('scraping....... ', f['title'])
 
             comment_el = re.sub('[\(\)]', '', soup.find(class_='commentList-title').find('span').text.split('\xa0')[-1])
 
@@ -228,8 +228,8 @@ def process_channel_soup(chan_url, html, dr):
                 num_comments = int(comment_el)
         #     print(num_comments)
             
-            if debug:
-                print('checkpoint A')
+#             if debug:
+#                 print('checkpoint A')
             
             f['num_comments'] = int(num_comments)
 
@@ -243,8 +243,8 @@ def process_channel_soup(chan_url, html, dr):
             # subscriber count
             f['sub_count'] = int(soup.find(class_='sub_count').text.split(':')[-1].strip().replace(',',''))
             
-            if debug:
-                print('checkpoint B')
+#             if debug:
+#                 print('checkpoint B')
 
             # total channel plays for all episodes
             f['play_count'] = int(soup.find(class_='play_count').text.split(':')[-1].strip().replace(',',''))
@@ -252,17 +252,17 @@ def process_channel_soup(chan_url, html, dr):
             # all listed social feeds, including channel website
             f['ch_feed-socials'] = [a.get('href') for a in soup.find(class_='ch_feed-socials').find_all('a')]
             
-            if debug:
-                print('checkpoint B-2')
+#             if debug:
+#                 print('checkpoint B-2')
         #     print('episode total div: \n', soup.find(class_='trackListCon_title').text.split('\xa0')[0])
 
             # episode count
             f['ep_total'] = soup.find(class_='trackListCon_title').text.split('\xa0')[0]
 #             print(f['ep_total'])
             
-            if debug:
-                print('checkpoint C')
-                
+#             if debug:
+#                 print('checkpoint C')
+#                 
             try:
                 f['ep_total'] = int(f['ep_total'])
             except:
@@ -277,8 +277,8 @@ def process_channel_soup(chan_url, html, dr):
             visible_eps = soup.find_all(class_='ep-item')
             recent_eps = []
             
-            if debug:
-                print('checkpoint D')
+#             if debug:
+#                 print('checkpoint D')
                 
 #             print(visible_eps)
             # iterate through all visible episodes and grab basic info
@@ -304,8 +304,8 @@ def process_channel_soup(chan_url, html, dr):
                 debug = True
                 continue
             
-            if debug:
-                print('checkpoint E')
+#             if debug:
+#                 print('checkpoint E')
                 
             #### TEXT BASED FEATURES ####
 
@@ -317,8 +317,8 @@ def process_channel_soup(chan_url, html, dr):
 
             f['cover_img_url'] = soup.find(class_='coverImgContainer').find('img').get('src')
             
-            if debug:
-                print('checkpoint F')
+#             if debug:
+#                 print('checkpoint F')
             
             print('COMPLETED scraping ',f['title'])
             break
@@ -402,7 +402,7 @@ def scrape_all_pods_in_category(chan_dict, category, dr, export=False):
     
     '''
     
-    print(f'Scraping {category} category...')
+#     print(f'Scraping {category} category...')
     
     window_rect=(0, 0, 800, 1200)
     dr.set_window_rect(*window_rect)
@@ -410,12 +410,20 @@ def scrape_all_pods_in_category(chan_dict, category, dr, export=False):
     category_list = list(chan_dict[category].keys())
     
     # get a list of already scraped channels, to avoid repetition:
-    with open('../scraped/channel/already_scraped.csv', 'r') as file:
-        scraped = pd.read_csv(file, names=['chan_title','chan_url','category'])
-        file.close()
+#     with open('../scraped/channel/already_scraped.csv', 'r') as file:
+#         scraped = pd.read_csv(file, names=['chan_title','chan_url','category'])
+#         file.close()
 #         print('scraped so far:')
 #         print(' | '.join(list(scraped.chan_title)))
         
+    scraped_urls = []
+    with open('../scraped/channel/already_scraped.csv', 'r') as file:
+        for line in file:
+    #         print(line)
+            chan_url = line.split(',')[-2]
+#             print(chan_url)
+            scraped_urls += [chan_url]
+    
     for chan in category_list:
 #       
         fail = False
@@ -423,11 +431,14 @@ def scrape_all_pods_in_category(chan_dict, category, dr, export=False):
 #         print(chan)
 #         print(type(chan))
 #         print(len(scraped[scraped.chan_title == chan]))
-        if len(scraped[scraped.chan_title == chan]) != 0:
-#             print('[ skipping: ', chan, ' ] ')
-            continue
+#         if len(scraped[scraped.chan_title == chan]) != 0:
+# #             print('[ skipping: ', chan, ' ] ')
+#             continue
         
         chan_url = chan_dict[category][chan]['chan_url']
+        
+        if chan_url in scraped_urls:
+            continue
         
         try:
             features = scrape_channel_page(chan_url, dr)
@@ -471,7 +482,7 @@ def scrape_all_pods_in_category(chan_dict, category, dr, export=False):
                 
     print(f'No more channels in {category} category to scrape. Moving on to next category.')
     
-    dr.quit()
+#     dr.quit()
             
 
 def log_test():
