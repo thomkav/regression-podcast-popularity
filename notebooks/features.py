@@ -12,6 +12,7 @@ import time
 import re
 import numpy as np
 import ast
+import tldextract
 
 
 
@@ -50,7 +51,7 @@ def recent_ep_mean_dist(recent_eps):
         return pd.Series(days_bt_eps).mean()
     
     except:
-        return 0
+        return 914.3 # mean age
 
 
 def lifetime_ep_freq(row):
@@ -95,16 +96,21 @@ def chan_age(row):
     df['lifetime_ep_freq'] = df.apply(chan_age, axis=1)
     
     '''
-    
-    last_ep_date = convert_ep_date(row['recent_eps'][0][0])
-    release_date = convert_ep_date(row['first_release'])
-    ep_total = row['ep_total']
-    
-    
-    
-    age = (last_ep_date - release_date).total_seconds() / (24. * 60. * 60.)
-    
-    return age
+    try:
+        last_ep_date = convert_ep_date(row['recent_eps'][0][0])
+        release_date = convert_ep_date(row['first_release'])
+        ep_total = row['ep_total']
+
+
+
+        age = (last_ep_date - release_date).total_seconds() / (24. * 60. * 60.)
+
+        if type(age) == float:
+            return age
+        else:
+            return 0
+    except:
+        return 0
 
 
 def avg_ep_len(recent_eps):
@@ -278,52 +284,114 @@ def get_twitter_follower_count(title):
     except:
         return 0
     
+social_domains = ['twitter', 'facebook', 'youtube', 'instagram']
+with open('../social_metrics/external_domains/external_domain_dicts.pickle','rb') as file:
+    domain_dict = pickle.load(file)
 
-def build_features(df):
+def return_external_site_domain(ch_feed_socials):
+    '''
+    
+    Return a non-social external domain from a list of domains.abs
+    
+    If one does not exist, return False
+    
+    
+    '''
+    
+#     print(ch_feed_socials)
+    
+    if not ch_feed_socials:
+        return False
+    
+    for link in ch_feed_socials:
+        external = link
+#         print('testing ', link)
+        social_domains = ['twitter', 'facebook', 'youtube', 'instagram']
+        for domain in social_domains:
+            pattern = '.*' + domain + '.*'
+    #         print(pattern, link)
+    #         print(re.match(pattern, link))
+            if re.match(pattern, link):
+#                 print('matches ',domain)
+                external = ''
+                break
+
+    return external
+
+def extract_domain(site):
+    try:
+        domain_name = tldextract.extract(site).domain + '.' + tldextract.extract(site).suffix
+        return domain_name
+    except:
+        return ''
+    
+
+def build_features(df, feature_set='episode'):
     '''
     
     Build all feature columns in one shot.
     
-    '''
+    feature_set: feature sets to develop        
+        'episode' (default)
+            - recent_ep_spacing
+            - lifetime_ep_freq
+            - avg_ep_len
+            - chan_age
+        
+        'social'
+            - has_twitter
+            - has_facebook
+            - has_youtube
+            - has_twitterchan_age
+      
     
+    '''
+
+
     #################################################
     # Episode Time Series Features
     #################################################
     
-    try:
-        df['recent_ep_spacing'] = df.recent_eps.apply(recent_ep_mean_dist)
-    except:
-        print('Error: failed to build recent_ep_spacing feature')
-    
-    try:
-        df['lifetime_ep_freq'] = df.apply(lifetime_ep_freq, axis=1)
-    except:
-        print('Error: failed to build lifetime_ep_freq feature')
-    
-    try:
-        df['avg_ep_len'] = df.recent_eps.apply(avg_ep_len)
-    except:
-        print('Error: failed to build avg_ep_len feature')
-    
-    try:
-        df['chan_age'] = df.apply(chan_age, axis=1)
-    except:
-        print('Error: failed to build chan_age feature')
+    if feature_set=='episode':
+        print('building episode time series features')
+        try:
+            df['recent_ep_spacing'] = df.recent_eps.apply(recent_ep_mean_dist)
+        except:
+            print('Error: failed to build recent_ep_spacing feature')
+
+        try:
+            df['lifetime_ep_freq'] = df.apply(lifetime_ep_freq, axis=1)
+        except:
+            print('Error: failed to build lifetime_ep_freq feature')
+
+        try:
+            df['avg_ep_len'] = df.recent_eps.apply(avg_ep_len)
+        except:
+            print('Error: failed to build avg_ep_len feature')
+
+        try:
+            df['chan_age'] = df.apply(chan_age, axis=1)
+        except:
+            print('Error: failed to build chan_age feature')
     
     #################################################
     # Social Account Metrics
     #################################################
     
-    social_domains = ['twitter', 'facebook', 'youtube', 'instagram']
-    for domain in social_domains:
+    if feature_set=='social':
+        print('building social media features')
+        social_domains = ['twitter', 'facebook', 'youtube', 'instagram']
+        for domain in social_domains:
+            try:
+                df['has_'+domain] = df['ch_feed-socials'].apply(has_domain,social_domain=domain)
+            except:
+                print(f'Error: failed to build has_{domain} binary feature')
+
         try:
-            df['has_'+domain] = df['ch_feed-socials'].apply(has_domain,social_domain=domain)
+            df['twitter_followers'] = df.title.apply(get_twitter_follower_count)
         except:
-            print(f'Error: failed to build has_{domain} binary feature')
+            print('Error: failed to build twitter_followers feature')
+            
     
-    try:
-        df['twitter_followers'] = df.title.apply(get_twitter_follower_count)
-    except:
-        print('Error: failed to build twitter_followers feature')
     
     return df
